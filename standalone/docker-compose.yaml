@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  tasks:
+    image: tasks:standalone_0.1.0-SNAPSHOT
+    container_name: tasks_app
+    command: >
+      java -jar /opt/tasks/tasks-standalone.jar 
+        --spring.datasource.url=jdbc:postgresql://db:5432/postgres
+        --spring.datasource.username=postgres
+    ports:
+      - "8080:8080"
+    networks:
+      - tasks
+    depends_on:
+      - db
+  db:
+    image: postgres:9.6
+    container_name: tasks_db
+    networks:
+      - tasks
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+
+networks:
+  tasks:
+    driver: bridge
+
