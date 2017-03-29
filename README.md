@@ -1,4 +1,4 @@
-# Tasks - [Scout Boot](https://github.com/BSI-Business-Systems-Integration-AG/ScoutBoot) Integration Example -  <img src="https://travis-ci.org/BSI-Business-Systems-Integration-AG/SpringBoot-and-EclipseScout.svg">
+# Tasks - [Scout Boot](https://github.com/BSI-Business-Systems-Integration-AG/ScoutBoot) Integration Example <img src="https://travis-ci.org/BSI-Business-Systems-Integration-AG/SpringBoot-and-EclipseScout.svg">
 
 **Please Note**: This is work in progress and has not (yet) been tested for productive usage.
 
