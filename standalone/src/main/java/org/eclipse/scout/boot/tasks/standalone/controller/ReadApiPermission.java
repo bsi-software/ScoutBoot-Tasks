@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.spring.controller;
+package org.eclipse.scout.boot.tasks.standalone.controller;
 
 import java.security.BasicPermission;
 

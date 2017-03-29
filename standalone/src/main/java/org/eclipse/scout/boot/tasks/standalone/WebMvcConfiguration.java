@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.spring;
+package org.eclipse.scout.boot.tasks.standalone;
 
 import java.io.IOException;
 

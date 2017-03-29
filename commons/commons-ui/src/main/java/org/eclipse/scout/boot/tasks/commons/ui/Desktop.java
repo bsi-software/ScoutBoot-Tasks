@@ -6,6 +6,7 @@ import org.eclipse.scout.boot.tasks.commons.ui.admin.AdminOutline;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.ViewAdminOutlinePermission;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.user.OptionsForm;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskOutline;
+import org.eclipse.scout.boot.ui.commons.fonts.FontAwesomeIcons;
 import org.eclipse.scout.rt.client.session.ClientSessionProvider;
 import org.eclipse.scout.rt.client.ui.action.keystroke.IKeyStroke;
 import org.eclipse.scout.rt.client.ui.action.menu.AbstractMenu;

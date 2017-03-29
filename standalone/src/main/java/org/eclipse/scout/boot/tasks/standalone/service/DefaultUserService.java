@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.spring.service;
+package org.eclipse.scout.boot.tasks.standalone.service;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -28,8 +28,8 @@ import org.eclipse.scout.boot.tasks.commons.ui.task.CreateTaskPermission;
 import org.eclipse.scout.boot.tasks.commons.ui.task.ReadTaskPermission;
 import org.eclipse.scout.boot.tasks.commons.ui.task.UpdateTaskPermission;
 import org.eclipse.scout.boot.tasks.commons.ui.task.ViewAllTasksPermission;
-import org.eclipse.scout.boot.tasks.standalone.scout.auth.AccessControlService;
-import org.eclipse.scout.boot.tasks.standalone.spring.controller.ReadApiPermission;
+import org.eclipse.scout.boot.tasks.standalone.controller.ReadApiPermission;
+import org.eclipse.scout.boot.tasks.standalone.security.AccessControlService;
 import org.eclipse.scout.rt.platform.util.IOUtility;
 import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;

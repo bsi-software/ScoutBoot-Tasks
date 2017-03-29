@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.spring.service;
+package org.eclipse.scout.boot.tasks.standalone.service;
 
 import org.modelmapper.ModelMapper;
 

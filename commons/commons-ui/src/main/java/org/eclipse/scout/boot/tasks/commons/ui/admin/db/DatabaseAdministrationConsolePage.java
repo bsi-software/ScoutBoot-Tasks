@@ -1,6 +1,6 @@
 package org.eclipse.scout.boot.tasks.commons.ui.admin.db;
 
-import org.eclipse.scout.boot.tasks.commons.ui.FontAwesomeIcons;
+import org.eclipse.scout.boot.ui.commons.fonts.FontAwesomeIcons;
 import org.eclipse.scout.rt.client.ui.action.menu.AbstractMenu;
 import org.eclipse.scout.rt.client.ui.desktop.outline.pages.AbstractPageWithNodes;
 import org.eclipse.scout.rt.client.ui.form.IForm;

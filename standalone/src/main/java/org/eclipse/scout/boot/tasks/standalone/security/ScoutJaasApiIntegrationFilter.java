@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.spring.security;
+package org.eclipse.scout.boot.tasks.standalone.security;
 
 import java.security.Principal;
 

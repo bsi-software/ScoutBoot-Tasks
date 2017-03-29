@@ -7,13 +7,14 @@ import javax.inject.Inject;
 
 import org.eclipse.scout.boot.tasks.commons.model.Task;
 import org.eclipse.scout.boot.tasks.commons.model.service.TaskService;
-import org.eclipse.scout.boot.tasks.commons.ui.AbstractDirtyFormHandler;
 import org.eclipse.scout.boot.tasks.commons.ui.TasksClientSession;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.user.UserLookupCall;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.CancelButton;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.OkButton;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.AcceptedAndDoneBox;
+import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.AcceptedAndDoneBox.AcceptedField;
+import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.AcceptedAndDoneBox.DoneField;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.AssignedAtField;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.AssignedByField;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.DescriptionField;
@@ -21,8 +22,7 @@ import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.DueD
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.ReminderField;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.ResponsibleField;
 import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.TitleField;
-import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.AcceptedAndDoneBox.AcceptedField;
-import org.eclipse.scout.boot.tasks.commons.ui.task.TaskForm.MainBox.TopBox.AcceptedAndDoneBox.DoneField;
+import org.eclipse.scout.boot.ui.commons.AbstractDirtyFormHandler;
 import org.eclipse.scout.rt.client.ui.form.AbstractForm;
 import org.eclipse.scout.rt.client.ui.form.IForm;
 import org.eclipse.scout.rt.client.ui.form.fields.booleanfield.AbstractBooleanField;

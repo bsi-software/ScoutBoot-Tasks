@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.scout.auth;
+package org.eclipse.scout.boot.tasks.standalone.security;
 
 import java.security.BasicPermission;
 import java.security.Permission;
@@ -131,7 +131,6 @@ public class PermissionService implements IPermissionService {
           if (!excludePermissions.contains(name)) {
             discoveredPermissions.add(permClass);
 
-//            String name = permClass.getName();
             Permission permission = (Permission) Class.forName(permClass.getName()).newInstance();
             m_permissionMap.put(name, permission);
           }

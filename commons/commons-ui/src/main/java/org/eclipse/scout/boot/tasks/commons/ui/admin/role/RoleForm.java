@@ -7,7 +7,6 @@ import javax.inject.Inject;
 
 import org.eclipse.scout.boot.tasks.commons.model.Role;
 import org.eclipse.scout.boot.tasks.commons.model.service.RoleService;
-import org.eclipse.scout.boot.tasks.commons.ui.AbstractDirtyFormHandler;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.role.RoleForm.MainBox.CancelButton;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.role.RoleForm.MainBox.OkButton;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.role.RoleForm.MainBox.RoleBox;
@@ -15,6 +14,7 @@ import org.eclipse.scout.boot.tasks.commons.ui.admin.role.RoleForm.MainBox.RoleB
 import org.eclipse.scout.boot.tasks.commons.ui.admin.role.RoleForm.MainBox.RoleBox.RoleIdField;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.user.CreateUserPermission;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.user.UpdateUserPermission;
+import org.eclipse.scout.boot.ui.commons.AbstractDirtyFormHandler;
 import org.eclipse.scout.rt.client.ui.basic.table.ITableRow;
 import org.eclipse.scout.rt.client.ui.form.AbstractForm;
 import org.eclipse.scout.rt.client.ui.form.IForm;

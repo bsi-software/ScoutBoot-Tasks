@@ -1,5 +1,5 @@
 
-package org.eclipse.scout.boot.tasks.standalone.scout.auth;
+package org.eclipse.scout.boot.tasks.standalone.security;
 
 import java.security.AllPermission;
 import java.security.Permission;

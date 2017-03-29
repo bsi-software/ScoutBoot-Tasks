@@ -91,7 +91,10 @@ public class TextDbProviderService implements ITextProviderService {
           if (key.equals(Text.toKey(textId))) {
             Locale locale = Text.toLocale(textId);
             String text = translationCache.get(textId);
-            texts.put(locale, text);
+            
+            if(StringUtility.hasText(text)) {
+            	texts.put(locale, text);
+            }
           }
         });
 

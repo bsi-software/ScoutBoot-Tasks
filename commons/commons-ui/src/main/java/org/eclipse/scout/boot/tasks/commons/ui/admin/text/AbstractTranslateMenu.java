@@ -2,7 +2,7 @@ package org.eclipse.scout.boot.tasks.commons.ui.admin.text;
 
 import java.util.Set;
 
-import org.eclipse.scout.boot.tasks.commons.ui.FontAwesomeIcons;
+import org.eclipse.scout.boot.ui.commons.fonts.FontAwesomeIcons;
 import org.eclipse.scout.rt.client.ui.action.menu.AbstractMenu;
 import org.eclipse.scout.rt.client.ui.action.menu.IMenuType;
 import org.eclipse.scout.rt.client.ui.action.menu.TableMenuType;

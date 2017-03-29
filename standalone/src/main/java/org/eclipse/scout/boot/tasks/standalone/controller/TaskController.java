@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.spring.controller;
+package org.eclipse.scout.boot.tasks.standalone.controller;
 
 import java.security.Principal;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import java.util.UUID;
 
 import org.eclipse.scout.boot.tasks.commons.model.Task;
 import org.eclipse.scout.boot.tasks.commons.model.service.TaskService;
-import org.eclipse.scout.boot.tasks.standalone.spring.WebMvcConfiguration;
+import org.eclipse.scout.boot.tasks.standalone.WebMvcConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.SpringVersion;
 import org.springframework.security.access.prepost.PreAuthorize;

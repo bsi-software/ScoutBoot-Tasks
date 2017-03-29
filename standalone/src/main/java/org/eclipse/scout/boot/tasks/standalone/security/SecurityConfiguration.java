@@ -1,8 +1,8 @@
-package org.eclipse.scout.boot.tasks.standalone.spring.security;
+package org.eclipse.scout.boot.tasks.standalone.security;
 
 import org.eclipse.scout.boot.tasks.commons.ui.admin.db.ReadDatabaseAdministrationConsolePermission;
-import org.eclipse.scout.boot.tasks.standalone.spring.WebMvcConfiguration;
-import org.eclipse.scout.boot.tasks.standalone.spring.controller.ReadApiPermission;
+import org.eclipse.scout.boot.tasks.standalone.WebMvcConfiguration;
+import org.eclipse.scout.boot.tasks.standalone.controller.ReadApiPermission;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;

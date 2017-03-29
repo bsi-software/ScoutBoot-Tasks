@@ -7,9 +7,9 @@ import javax.inject.Inject;
 
 import org.eclipse.scout.boot.tasks.commons.model.Role;
 import org.eclipse.scout.boot.tasks.commons.model.service.RoleService;
-import org.eclipse.scout.boot.tasks.commons.ui.FontAwesomeIcons;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.role.RoleTablePage.Table;
 import org.eclipse.scout.boot.tasks.commons.ui.admin.text.TranslationForm;
+import org.eclipse.scout.boot.ui.commons.fonts.FontAwesomeIcons;
 import org.eclipse.scout.rt.client.ui.action.menu.AbstractMenu;
 import org.eclipse.scout.rt.client.ui.action.menu.IMenuType;
 import org.eclipse.scout.rt.client.ui.action.menu.TableMenuType;

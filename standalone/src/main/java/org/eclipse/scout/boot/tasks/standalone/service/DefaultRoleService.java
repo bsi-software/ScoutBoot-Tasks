@@ -1,4 +1,4 @@
-package org.eclipse.scout.boot.tasks.standalone.spring.service;
+package org.eclipse.scout.boot.tasks.standalone.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -7,7 +7,7 @@ import org.eclipse.scout.boot.tasks.commons.data.RoleRepository;
 import org.eclipse.scout.boot.tasks.commons.data.entity.RoleEntity;
 import org.eclipse.scout.boot.tasks.commons.model.Role;
 import org.eclipse.scout.boot.tasks.commons.model.service.RoleService;
-import org.eclipse.scout.boot.tasks.standalone.scout.auth.AccessControlService;
+import org.eclipse.scout.boot.tasks.standalone.security.AccessControlService;
 import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.spi.MappingContext;
