@@ -37,12 +37,6 @@
 			<version>${project.parent.version}</version>
 		</dependency>
 
-		<!-- Spring dependencies -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-
 		<!-- Miscellaneous dependencies -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>

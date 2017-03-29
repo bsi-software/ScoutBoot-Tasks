@@ -25,6 +25,11 @@
 			<artifactId>scout-boot-ui</artifactId>
 			<version>${scout.boot.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.scout.boot</groupId>
+			<artifactId>scout-boot-ui-security</artifactId>
+			<version>${scout.boot.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>

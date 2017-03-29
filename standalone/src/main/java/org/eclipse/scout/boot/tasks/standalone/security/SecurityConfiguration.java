@@ -1,8 +1,8 @@
 package org.eclipse.scout.boot.tasks.standalone.security;
 
 import org.eclipse.scout.boot.tasks.commons.ui.admin.db.ReadDatabaseAdministrationConsolePermission;
-import org.eclipse.scout.boot.tasks.standalone.WebMvcConfiguration;
 import org.eclipse.scout.boot.tasks.standalone.controller.ReadApiPermission;
+import org.eclipse.scout.boot.ui.security.AbstractScoutBootWebSecurityConfigurerAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -34,14 +34,13 @@ public class SecurityConfiguration {
 
 	@Configuration
 	@Order(2)
-	public static class DatabaseAdministrationConsoleWebSecurityConfigurationAdapter
-			extends WebSecurityConfigurerAdapter {
+	public static class DatabaseAdministrationConsoleWebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
 
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
 		/** @formatter:off **/
 	      http
-	          .antMatcher(WebMvcConfiguration.H2_CONTEXT_PATH + "/**")
+	          .antMatcher(StandaloneServletConfiguration.H2_CONTEXT_PATH + "/**")
 	          .authorizeRequests()
 	            .anyRequest().hasAuthority(ReadDatabaseAdministrationConsolePermission.class.getName())
 	            .and()
@@ -68,7 +67,7 @@ public class SecurityConfiguration {
 		protected void configure(HttpSecurity http) throws Exception {
 		/** @formatter:off **/
 	      http
-	          .antMatcher(WebMvcConfiguration.API_CONTEXT_PATH + "/**")
+	          .antMatcher(StandaloneServletConfiguration.API_CONTEXT_PATH + "/**")
 	          .authorizeRequests()
 	            .anyRequest().hasAuthority(ReadApiPermission.class.getName())
 	            .and()
@@ -79,40 +78,9 @@ public class SecurityConfiguration {
       	/** @formatter:on **/
 		}
 	}
-
+	
 	@Configuration
-	public static class FormLoginWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
-
-		@Override
-		protected void configure(HttpSecurity http) throws Exception {
-		/** @formatter:off **/
-	      http
-	          .authorizeRequests()
-	          .antMatchers(
-	              "/",
-	              "/index.html",
-	              WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/login.html",
-	              WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/logout.html",
-	              WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/res/**",
-	              WebMvcConfiguration.WEBJARS_CONTEXT_PATH + "/**")
-	            .permitAll()
-	          .anyRequest()
-	            .authenticated()
-	            .and()
-	          .formLogin()
-	            .loginPage(WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/login.html")
-	            .loginProcessingUrl(WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/auth")
-	            .defaultSuccessUrl(WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/", true)
-	            .failureUrl(WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/login.html?error")
-	            .and()
-	          .logout()
-	            .logoutUrl(WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/logout")
-	            .logoutSuccessUrl(WebMvcConfiguration.SCOUT_CONTEXT_PATH + "/logout.html")
-	            .invalidateHttpSession(true)
-	            .and()
-	          .csrf()
-	            .disable(); // Scout provides CSRF protection
-      	/** @formatter:on **/
-		}
+	public static class SecurityScoutBootWebSecurityConfigurerAdapter extends AbstractScoutBootWebSecurityConfigurerAdapter {
+		
 	}
 }

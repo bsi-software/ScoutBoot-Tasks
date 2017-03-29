@@ -8,7 +8,7 @@ import java.util.UUID;
 
 import org.eclipse.scout.boot.tasks.commons.model.Task;
 import org.eclipse.scout.boot.tasks.commons.model.service.TaskService;
-import org.eclipse.scout.boot.tasks.standalone.WebMvcConfiguration;
+import org.eclipse.scout.boot.tasks.standalone.security.StandaloneServletConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.SpringVersion;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(WebMvcConfiguration.API_CONTEXT_PATH + "/tasks")
+@RequestMapping(StandaloneServletConfiguration.API_CONTEXT_PATH + "/tasks")
 public class TaskController {
 
   @Autowired
